@@ -1,5 +1,11 @@
 # E07b-Procedural-Generation
 
+Created with Godot 3.2
+
+I changed `tile_size` to be a `Vector2` because TileMap's tile size property is a `Vector2`. I also changed the algorithm a little bit because having a separate `current` variable from the stack was kinda weird to me, and I also made `unvisited` into a `Dictionary` for efficiency's sake. Also, the tileset referred to 'assets/spritesheet.png', which probably works fine on Windows but it gave me some issues on Linux (and would probably do the same on Mac too) so I had to do some finagling to get that fixed.
+
+---
+
 The concepts in this exercise may be a little advanced for your current skill level, but as long as you closely follow the accompanying video, you shouldn't have any trouble accomplishing the exercise. I mostly want to give you a chance to play with the TileMap node and to see how procedural generation might work in a project.
 
 As always, Fork and Clone this repository.
